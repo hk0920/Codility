@@ -49,11 +49,11 @@ function solution(X, A) {
 	const setArr = new Set();
 
 	for(let i=0; i< A.length; i++){
-			setArr.add(A[i]);
+		setArr.add(A[i]);
 
-			if(setArr.size === X){
-				return i;
-			}
+		if(setArr.size === X){
+			return i;
+		}
 	}
 	return -1;
 }

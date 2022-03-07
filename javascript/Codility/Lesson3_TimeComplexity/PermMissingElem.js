@@ -31,7 +31,7 @@ function solution(A) {
 	const originSum = ((A.length+1) * (A.length+2)) / 2;
 	let sum = 0;
 	for(let i=0; i<A.length; i++){
-			sum += A[i];
+		sum += A[i];
 	}
 
 	return originSum - sum;

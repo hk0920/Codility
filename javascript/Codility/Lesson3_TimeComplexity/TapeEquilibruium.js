@@ -63,7 +63,7 @@ function solution(A) {
 		result = left-right;
 		
 		if(result < 0){
-				result *= -1;   
+			result *= -1;   
 		}
 
 		minArr.push(result);

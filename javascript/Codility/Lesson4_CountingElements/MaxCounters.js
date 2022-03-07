@@ -59,27 +59,27 @@ function solution(N, A) {
 	let max = 0;
 
 	for(let i=0; i<N; i++){
-			arr[i] = max;
+		arr[i] = max;
 	}
 
 	for(let i=0; i<A.length; i++){
+		if(1 <= A[i] && A[i] <= N){
 			if(1 <= A[i] && A[i] <= N){
-					if(1 <= A[i] && A[i] <= N){
-							if(A[i] < max){
-									arr[A[i]-1] = max+1;
-							}else{
-									++arr[A[i]-1];
-							}
-					}
-			}else if(A[i] === N+1){
-					max = arr[i];
+				if(A[i] < max){
+					arr[A[i]-1] = max+1;
+				}else{
+					++arr[A[i]-1];
+				}
 			}
+		}else if(A[i] === N+1){
+			max = arr[i];
+		}
 	}
 
 	for(let i=0; i<N; i++){
-			if(arr[i] < max){
-					arr[i] = max;
-			}
+		if(arr[i] < max){
+			arr[i] = max;
+		}
 	}
 
 	return arr;

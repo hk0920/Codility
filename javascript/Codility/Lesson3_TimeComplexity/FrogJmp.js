@@ -32,7 +32,7 @@ function solution(X, Y, D) {
 	let jump = Math.floor(distance /  D);
 
 	if(X +(D*jump) < Y){
-			jump += 1;
+		jump += 1;
 	}
 
 	return jump;
