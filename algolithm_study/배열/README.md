@@ -44,3 +44,26 @@
 		Array[i] = "값";
 	}
 ```
+
+> 4. 배열 정렬
+```javascript
+	// 오류 : ASCII 문자 순서대로 정렬되어 숫자크기대로 나오지 않음.
+	sort(); 						
+
+	// 오름차순
+	sort(function(a,b){	
+		return a-b;
+	});
+
+	// 내림차순
+	sort(function(a,b){	
+		return b-a;
+	});
+```
+
+> 5. 문자열 배열 => 숫자 배열
+```javascript
+	Array.map(function(i){
+		return Number(i);
+	});
+```
