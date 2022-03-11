@@ -3,7 +3,7 @@
 // arr의 각 수는 0 이상 100 이하이고 N은 1000 이하이다.
 
 // 백준 10808_알파벳 개수 -> 시간복잡도 O(N)으로 변경해서 풀어보시오.
-// javascript > BeackJoon > 10808_알파벳 개수 > index.js (참고- 시간복잡도 : O(N²))
+// javascript > BeackJoon > Bronze_level > 10808_알파벳 개수 > index.js (참고- 시간복잡도 : O(N²))
 function solution(arr, N){
 	let result = 0;
 	const numArr = new Array(100).fill(0);
