@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync("javascript/BaeckJoon/2562_최대값/example.txt").toString().split("\n"); 
+const inputData = fs.readFileSync("javascript/BaeckJoon/Bronze_level/2562_최대값/example.txt").toString().split("\n"); 
 
 let idx = 0;
 let max = parseInt(inputData[0]);

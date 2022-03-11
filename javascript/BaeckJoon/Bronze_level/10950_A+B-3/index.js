@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync("javascript/BaeckJoon/10950_A+B-3/example.txt").toString().split("\n");   
+const inputData = fs.readFileSync("javascript/BaeckJoon/Bronze_level/10950_A+B-3/example.txt").toString().split("\n");   
 
 for(let i=0; i<inputData.length; i++){
 	const num1 = parseInt(inputData[i].split(" ")[0]);

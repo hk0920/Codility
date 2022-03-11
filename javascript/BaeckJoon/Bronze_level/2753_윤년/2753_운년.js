@@ -5,7 +5,7 @@
 // const inputData2 = fs.readFileSync('javascript/BaeckJoon/example.txt').toString().split('\n'); // vscode 테스트 시 
 
 const fs = require('fs');
-const inputData = fs.readFileSync('javascript/BaeckJoon/2753_윤년/example.txt').toString().split("\n");
+const inputData = fs.readFileSync('javascript/BaeckJoon/Bronze_level/2753_윤년/example.txt').toString().split("\n");
 
 for(let i=0; i<inputData.length; i++){
 	if(inputData[i]%4 === 0){

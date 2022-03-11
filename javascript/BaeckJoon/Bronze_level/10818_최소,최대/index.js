@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync("javascript/BaeckJoon/10818_최소,최대/example.txt").toString().split("\n"); 
+const inputData = fs.readFileSync("javascript/BaeckJoon/Bronze_level/10818_최소,최대/example.txt").toString().split("\n"); 
 
 let cnt = inputData[0];
 let arr = inputData[1].split(" ");

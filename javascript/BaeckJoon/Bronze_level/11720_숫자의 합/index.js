@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync('javascript/BaeckJoon/11720_숫자의 합/example.txt').toString().split("\n");
+const inputData = fs.readFileSync('javascript/BaeckJoon/Bronze_level/11720_숫자의 합/example.txt').toString().split("\n");
 
 const cnt = inputData[0];
 const numArr = inputData[1].split("");

@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync('javascript/BaeckJoon/2475_검증수/example.txt').toString();
+const inputData = fs.readFileSync('javascript/BaeckJoon/Bronze_level/2475_검증수/example.txt').toString();
 
 function solution(arg){
 	let result = 0;

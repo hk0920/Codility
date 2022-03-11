@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync("javascript/BaeckJoon/10808_알파벳 개수/example.txt").toString(); 
+const inputData = fs.readFileSync("javascript/BaeckJoon/Bronze_level/10808_알파벳 개수/example.txt").toString(); 
 
 function solution(word){
 	let result = "";

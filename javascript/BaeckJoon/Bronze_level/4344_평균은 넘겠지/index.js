@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync("javascript/BaeckJoon/4344_평균은 넘겠지/example.txt").toString().split("\n"); 
+const inputData = fs.readFileSync("javascript/BaeckJoon/Bronze_level/4344_평균은 넘겠지/example.txt").toString().split("\n"); 
 
 const cnt = Number(inputData[0])+1;
 for(let i=1; i<cnt; i++){

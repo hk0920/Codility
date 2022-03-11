@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync('javascript/BaeckJoon/1152_단어의 개수/example.txt').toString().split("\n");
+const inputData = fs.readFileSync('javascript/BaeckJoon/Bronze_level/1152_단어의 개수/example.txt').toString().split("\n");
 
 for(let i=0; i<inputData.length; i++){
 	const text = inputData[i].split(" ");

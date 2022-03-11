@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync('javascript/BaeckJoon/2525_오븐시계/example.txt').toString().split("\n");
+const inputData = fs.readFileSync('javascript/BaeckJoon/Bronze_level/2525_오븐시계/example.txt').toString().split("\n");
 
 for(let i=0; i<inputData.length; i++){
 	let hour = parseInt(inputData[i].split(" ")[0]);

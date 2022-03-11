@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync("javascript/BaeckJoon/1546_평균/example.txt").toString().split("\n"); 
+const inputData = fs.readFileSync("javascript/BaeckJoon/Bronze_level/1546_평균/example.txt").toString().split("\n"); 
 
 const cnt = inputData[0];
 const score = inputData[1].split(" ").map(function(i){

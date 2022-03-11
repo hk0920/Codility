@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync('javascript/BaeckJoon/2675_문자열반복/example.txt').toString().split("\n");
+const inputData = fs.readFileSync('javascript/BaeckJoon/Bronze_level/2675_문자열반복/example.txt').toString().split("\n");
 
 function solution(arg){
 	let result = "";

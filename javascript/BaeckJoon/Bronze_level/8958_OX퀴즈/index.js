@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync("javascript/BaeckJoon/8958_OX퀴즈/example.txt").toString().split("\n"); 
+const inputData = fs.readFileSync("javascript/BaeckJoon/Bronze_level/8958_OX퀴즈/example.txt").toString().split("\n"); 
 
 const cnt = Number(inputData[0])+1;
 let result = "";

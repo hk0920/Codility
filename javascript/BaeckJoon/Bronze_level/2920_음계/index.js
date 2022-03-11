@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync('javascript/BaeckJoon/2920_음계/example.txt').toString().split(" ");
+const inputData = fs.readFileSync('javascript/BaeckJoon/Bronze_level/2920_음계/example.txt').toString().split(" ");
 
 function solution(arg){
 	let result = "";

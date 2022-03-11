@@ -1,5 +1,5 @@
 const fs = require('fs');
-const inputData = fs.readFileSync('javascript/BaeckJoon/1157_단어 공부/example.txt').toString().toUpperCase();
+const inputData = fs.readFileSync('javascript/BaeckJoon/Bronze_level/1157_단어 공부/example.txt').toString().toUpperCase();
 
 function solution(arg){
 	let result = "";
