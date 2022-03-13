@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inputData = fs.readFileSync('javascript/BaeckJoon/Bronze_level/13300_방배정/example.txt').toString().split("\n");
 
-function solution(arr, X){
+function solution(arr, K){
 	let result = 0;
 	const multiArr = [
 		[0,0],
@@ -28,12 +28,13 @@ function solution(arr, X){
 	}
 	console.log(multiArr)
 
-	// console.log(multiArr[1][0] / X)
+	// console.log(multiArr[1][0] / K)
 	for(let i=0; i<multiArr.length; i++){
 		for(let j=0; j<2; j++){
-			result += multiArr[i][j] / X;
+			result += Math.floor(multiArr[i][j] / K);
+			console.log(multiArr[i][j] / K)
 
-			if(multiArr[i][j] % X !== 0){
+			if(multiArr[i][j] % K !== 0){
 				result += 1;
 			}
 		}
