@@ -3,22 +3,15 @@ const inputData = fs.readFileSync('javascript/BaeckJoon/Silver_level/1874_스택
 
 function solution(K, arr){
 	let result = 0;
-	let cnt = 2;
-	let idx = 0;
 	const resultArr = [];
-	while(true){
-		console.log("cnt=>" + cnt)
-		if(cnt > arr[idx]){
-			console.log(cnt, arr[idx]);
-			resultArr.push(arr[idx]);
-			cnt++;
-			idx++;
-		}else{
-			console.log(cnt, arr[idx])
-		}
+	for(let i=0; i<K; i++){
+		let cnt = 1;
 
-		if(cnt === K){
-			break;
+		while(cnt < K){
+			console.log(cnt, K)
+			if(cnt < arr[i]){
+				resultArr.push(cnt++);
+			}
 		}
 	}
 
@@ -32,4 +25,5 @@ const testArr = [];
 for(let i=0; i<testK; i++){
 	testArr.push(Number(inputData[i+1].trim()));
 }
+console.log(testArr)
 console.log(solution(testK, testArr));
