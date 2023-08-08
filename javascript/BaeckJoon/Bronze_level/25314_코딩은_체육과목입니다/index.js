@@ -8,7 +8,7 @@ function solution(data){
         result += "long ";
     }
 
-    result += "init";
+    result += "int";
 
     return result;
 }
