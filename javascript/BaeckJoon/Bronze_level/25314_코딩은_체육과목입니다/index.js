@@ -3,8 +3,8 @@ const inputData = fs.readFileSync("./example.txt").toString().trim();
 
 function solution(data){
     let result = "";
-
-    while(data%4){
+    const forN = Math.floor(data/4);
+    for(let i=0; i<forN; i++){
         result += "long ";
     }
 
