@@ -13,37 +13,23 @@ function solution(data){
         const i = data[k].split(" ")[0];
         const j = data[k].split(" ")[1];
 
-        console.log("i, j =>", i, j)
+        // console.log("i, j =>", i, j)
+        let arr2 = [];
 
-        let cnt = 1;
-
-        for(let start=i; start<=j; start++){
-            let end = j-cnt;
-            let endVal =  arr[end];
-            let startVal =  arr[start-1];
-
-            // console.log(j ,"-", cnt , "=", j-cnt )
-
-            arr.splice(start, end, endVal);
-            
-            console.log(arr)
+        for(let q=i; q<=j; q++){
+            arr2.push(arr[q-1])
+        }
+        arr2.reverse();
+        
+        let cnt = 0;
+        for(let q=i; q<=j; q++){
+            arr[q-1] = arr2[cnt];
             cnt++;
-
-
-            // console.log("start, end =>", start, end)
-            
-            // for(let end=j; end>i; end--){
-
-            //     console.log("start, end =>", start, end)
-            //     // const val1 = arr[idx-1];
-            //     // const val2 = arr[end-1];
-            //     // arr[idx-1] = val1;
-            //     // arr[end-1] = val2;
-            // }
         }
     }
 
-    console.log(arr)
+    // console.log(arr)
+    result = arr.join(" ");
     return result;
 }
 
