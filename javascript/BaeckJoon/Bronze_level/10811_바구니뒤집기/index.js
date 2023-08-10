@@ -10,8 +10,8 @@ function solution(data){
     for(let i=0; i<n; i++) arr.push(i+1);
 
     for(let k=1; k<=m; k++){
-        const i = data[k].split(" ")[0];
-        const j = data[k].split(" ")[1];
+        const i = Number(data[k].split(" ")[0]);
+        const j = Number(data[k].split(" ")[1]);
 
         // console.log("i, j =>", i, j)
         let arr2 = [];
