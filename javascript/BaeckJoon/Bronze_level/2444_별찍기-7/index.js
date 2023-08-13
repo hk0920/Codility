@@ -3,32 +3,45 @@ const inputData = fs.readFileSync("./example.txt").toString().trim();
 
 function solution(data){
   let result = "";
-  const cnt = (2 * Number(data)) - 1;
-  // let arr = [];
-  // for(let i=0; i<cnt; i++){
-  //   arr.push(i);
-  // }
+  const N = (2 * Number(data)) - 1;
 
-  let end = Math.floor(cnt/2);
-  let start = Math.floor(cnt/2);
-  for(let i=0; i<cnt; i++){
-    for(let j=0; j<cnt; j++){
-      if(j < (start) || j > (end-i)){
+  let diviceN = Math.floor(N/2);
+  for(let i=0; i<diviceN; i++){
+    let start = diviceN - i;
+    let end = diviceN + i;
+
+    for(let k=0;k<N; k++){
+      if(k < start || k > end){
         result += " ";
       }else{
         result += "*";
       }
     }
-    if(end <= cnt+2){
-      end += 2;
-    }
-    if(start > cnt+1){
-      start += 1;
-    }else{
-      start -= 1;
-    }
+
     result += "\n";
+    
+    // console.log(diviceN, i, start, end)
   }
+
+  for(let i=diviceN; i>-1; i--){
+    let start = diviceN - i;
+    let end = diviceN + i;
+
+    for(let k=0;k<N; k++){
+      if(k < start || k > end){
+        result += " ";
+      }else{
+        result += "*";
+      }
+    }
+
+    if(i != 0){
+      result += "\n";
+    }
+    
+    // console.log(diviceN, i, start, end)
+  }
+  
 
   return result;
 }
