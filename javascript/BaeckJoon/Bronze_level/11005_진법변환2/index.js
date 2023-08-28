@@ -21,7 +21,7 @@ function solution(data){
     for(let i=0; i<temp.length; i++){
         if(temp[i] >=10 && temp[i] <= 36){
             // 아스키코드를 문자로 변환 : String.fromCharCode()
-            // 문자를 아스키코드로 변환 : String.charCodeAt()
+            // 문자를 아스키코드로 변환 : value(값).charCodeAt()
             temp[i] = String.fromCharCode(temp[i]+55)
         }
     }
