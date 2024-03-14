@@ -7,14 +7,14 @@
 >
 > * **2. Vscode 세팅**   
 > -<span style="color:blue;">Code Runner</span> 확장 플러그인 다운로드  
-> -실행 단축키 (윈도우): ctrl + alt + n 
+> -실행 단축키 (윈도우): ctrl + alt + n    
 > -실행 단축키 (맥북): control + option + n 
       
 ### 백준 문제의 예제 입력받기
 두가지 방법이 있는데 문제마다 fs모듈을 사용했을때 '런타임 에러'가 나올 수 있다.
 >
-> * **fs 모듈**
-> -fs모듈 설치 : npm install fs
+> * **fs 모듈**   
+> 설치 : npm install fs
 
 ```javascript
 	const fs = require('fs');
